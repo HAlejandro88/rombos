@@ -1,0 +1,41 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-button/paper-button.html">
+<link rel="import" href="../paper-input/paper-input.html">
+ 
+<dom-module id="examen-pregunta6">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+  
+    </style>
+    <paper-input label=componente></paper-input>
+      <paper-button>Okay</paper-button>
+    </div>
+  </template>
+
+  <script>
+    /**
+     * `examen-pregunta6`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class ExamenPregunta6 extends Polymer.Element {
+      static get is() { return 'examen-pregunta6'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'examen-pregunta6'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ExamenPregunta6.is, ExamenPregunta6);
+  </script>
+</dom-module>
